@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 The pipeline consisted of the following steps:
 1) Convert image to grayscale format
 2) Filter the image with Gaussian operator, this is done to allow for more smooth changes in intesity, which will allow Edge detection work better. (Canny)
-3) Use Canny edge detection algorithm on the smooth image, need to fine tune the threshold parmaeters.
+3) Use Canny edge detection algorithm on the smooth image, need to fine tune the threshold parameters.
 4) Create a region of interest in the canny edges image. We assume our camera is @ the center of the car and take assumptions regarding that.
 5) Create line segementes using Hough Transofrm (voting of possible lines in the hough space) - need to parameterize that aswell.
    After we have line segmentes we want to connect them to coherent lines - used the assumption of having 2 lines, one left and one right, and exterpolated / averaged the line segments to left / right and continued from that.
