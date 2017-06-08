@@ -9,7 +9,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images_output/canny.png
+[image3]: ./test_images_output/Result.png
 
 ---
 
@@ -31,6 +32,8 @@ The way I connected the lines is first - segment each line segment to either 'le
 For all left line segments - average their intercept and slope. Using ymin/ymax of the image to find the corresponding x's. do the same for right line segments -> then draw the two lines.
 
 ![alt text][image1]
+![alt text][image3]
+
 
 
 ### 2. Potential shortcomings of the pipeline
