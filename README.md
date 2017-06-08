@@ -13,6 +13,8 @@ The goals / steps of this project are the following:
 [image3]: ./test_images_output/Result.png
 
 ---
+![alt text][image1]
+![alt text][image3]
 
 ### Reflection
 
@@ -30,11 +32,6 @@ The pipeline consisted of the following steps:
 The draw_lines() function was simply drawing the line segments without connecting them to full lines.
 The way I connected the lines is first - segment each line segment to either 'left' or 'right' using the slope.
 For all left line segments - average their intercept and slope. Using ymin/ymax of the image to find the corresponding x's. do the same for right line segments -> then draw the two lines.
-
-![alt text][image1]
-![alt text][image3]
-
-
 
 ### 2. Potential shortcomings of the pipeline
 1) All parameter were fine tuned by hand - the edge detection and/or hough transofrm may not work aswell for images taken with different intensties etc.
